@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "main-rtl.css",
+	"sources": [
+		"../../../scss/dist/main-rtl.scss",
+		"../../../scss/dir/_rtl.scss"
+	],
+	"sourcesContent": [
+		"@import \"../dir/rtl\";\r\n@import \"../dir/rtl\";\r\n",
+		"@import url(\"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");\r\n$mainFont: \"Poppins\", sans-serif;\r\n\r\n$s: right;\r\n$e: left;\r\n\r\n$n: 1;\r\n$p: -1;\r\n\r\nbody {\r\n  direction: rtl;\r\n  font-family: $mainFont;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "ACAA,OAAO,CAAC,0LAAI;AAAZ,OAAO,CAAC,0LAAI;;AASZ,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,GAAG;EACd,WAAW,EAVF,SAAS,EAAE,UAAU;CAW/B;;;AAHD,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,GAAG;EACd,WAAW,EAVF,SAAS,EAAE,UAAU;CAW/B"
+}

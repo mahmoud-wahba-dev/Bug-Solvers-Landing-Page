@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <!-- Global bootstrap CDN V5.2  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Global main css file for ltr  -->
+    <link rel="stylesheet" href="./content/css/dist/dist/main-ltr.css" />
+  </head>
+
+  <body>
+    <!-- start navabr -->
+    <nav class="navbar navbar-expand-lg navbar_landing">
+      <div class="container">
+        <div>
+          <button
+            class="btn btn_register_nav"
+            data-bs-toggle="modal"
+            data-bs-target="#registerationModal"
+          >
+            سجل معانا
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="offcanvasExample">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#last_sec">محتوي الكورس </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#success_stories">قصص نجاح طلابنا </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#follow_up_sec">نظام المتابعة</a>
+            </li>
+            <li class="nav-item">
+              <a dir="rtl" class="nav-link" href="#intro">كورس CS 01</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-end gap-0 gap-sm-5"
+        >
+          <a
+            class="nav-link lang_dropdown_navbar"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+          >
+            <img src="./assets/images/navbar/uk.png" alt="lang_icon.svg" />
+          </a>
+          <a class="navbar-brand me-0" href="index.html">
+            <img
+              src="./assets/images/navbar/bug_solvers_logo_ux.svg"
+              alt="Bug-solvers-logo.svg"
+            />
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close ms-auto"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#last_sec">محتوي الكورس </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#success_stories">قصص نجاح طلابنا </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#follow_up_sec">نظام المتابعة</a>
+            </li>
+            <li class="nav-item">
+              <a dir="rtl" class="nav-link" href="#intro">كورس CS 01</a>
+            </li>
+          </ul>
+
+          <a
+            class="nav-link lang_dropdown_navbar"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+          >
+            <img
+              width="20"
+              height="20"
+              src="./assets/images/navbar/uk.png"
+              alt="lang_icon.svg"
+            />
+            EN
+          </a>
+        </nav>
+      </div>
+    </div>
+    <!-- end navabr -->
+
+    <main>
+      <div class="landin_page">
+        <section class="hero_sec">
+          <div class="container">
+            <h1 class="title">
+              انضم إلى دورتنا التدريبية لإحتراف <span class="nums">CS01</span>
+            </h1>
+            <p class="subtitle">
+              التمكين بالمعرفة العميقة والمهارات العملية في تقنيات الواجهة
+              الخلفية لتعزيز حياتك المهنية في تطوير البرمجيات
+            </p>
+            <div class="text-center">
+              <a class="btn btn_register" href="">سجل معانا</a>
+            </div>
+            <div class="iframe_container">
+              <iframe
+                width="100%"
+                height="523"
+                src="https://www.youtube.com/embed/xZNSHOULd8Q?si=VlJ2rv_yjor2JTUF"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <img
+              class="right_icon"
+              src="./assets/images/landing_page/right_icon.svg"
+              alt="right_icon.svg"
+            />
+            <img
+              class="star_icon"
+              src="./assets/images/landing_page/star.svg"
+              alt="star.svg"
+            />
+            <img
+              class="left_icon"
+              src="./assets/images/landing_page/left_icon.svg"
+              alt="left_icon.svg"
+            />
+          </div>
+        </section>
+        <section class="intro" id="intro">
+          <div class="container">
+            <div class="row gy-5">
+              <div class="col-lg-6 position-relative">
+                <img
+                  class="shape_img"
+                  src="./assets/images/landing_page/Ellipse_intro.png"
+                  alt="Ellipse_intro.png"
+                />
+                <div class="iframe_container">
+                  <iframe
+                    width="700"
+                    height="650"
+                    src="https://www.youtube.com/embed/XMTUjnvmTpU?si=hQE5MDMJIgy9-O8o"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h4 class="title">
+                  <span class="nums">CS01</span> مقدمة في علوم الكمبيوتر
+                </h4>
+                <p class="subtitle">
+                  تقدم هذه الدورة التأسيسية المفاهيم الأساسية لعلوم الكمبيوتر،
+                  مما يوفر للطلاب فهمًا قويًا للمبادئ والممارسات التي تدعم هذا
+                  المجال. من خلال الجمع بين المعرفة النظرية والتمارين العملية،
+                  سيستكشف المشاركون موضوعات تتراوح من البرمجة الأساسية إلى هياكل
+                  البيانات والخوارزميات والتفكير الحسابي.
+                </p>
+                <ul class="ul_points">
+                  <li>فهم المفاهيم الأساسية لعلوم الكمبيوتر.</li>
+                  <li>
+                    تطوير مهارات البرمجة الأساسية باستخدام لغة برمجة عالية
+                    المستوى.
+                  </li>
+                  <li>اكتساب المعرفة بهياكل البيانات والخوارزميات.</li>
+                  <li>تعلم تقنيات حل المشكلات والتفكير الحسابي.</li>
+                  <li>استكشاف الآثار الأخلاقية لتقنيات الحوسبة .</li>
+                </ul>
+                <div class="text-end">
+                  <a href="" class="btn btn_reserve">إحجز مكانك دلوقتي</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec_3">
+          <div class="container">
+            <h4 class="title">
+              لو انت واحد من الاربعة دول يبقي
+
+              <br />
+
+              انت في
+              <span class="text-primary">👇 المكان الصح</span>
+            </h4>
+            <div class="row cards_container">
+              <div class="col-md-6">
+                <div class="card">
+                  <div>
+                    <img
+                      src="./assets/images/landing_page/icon1.svg"
+                      alt="icon1.svg"
+                    />
+                  </div>
+                  <h5 class="card_title">خريج جديد</h5>
+                  <p class="card_desc">
+                    مراجعة تعريف ريادي الأعمال للتخطيط للعلامات التجارية مرة
+                    أخرى، هدف العلامة التجارية هو التمييز لمؤسستك.
+                  </p>
+                  <div>
+                    <a href="" class="anc_learn">تعرّف أكثر</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card">
+                  <div>
+                    <img
+                      src="./assets/images/landing_page/icon1.svg"
+                      alt="icon1.svg"
+                    />
+                  </div>
+                  <h5 class="card_title">عايز تتعلم برمجة</h5>
+                  <p class="card_desc">
+                    تصميم وتطوير موقع إبداعي. نقوم بتخصيص جميع المواقع لتناسب
+                    احتياجاتك، سواء كان ذلك موقعًا للتسوق عبر الإنترنت أو غيره.
+                  </p>
+                  <div>
+                    <a href="" class="anc_learn">تعرّف أكثر</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card">
+                  <div>
+                    <img
+                      src="./assets/images/landing_page/icon3.svg"
+                      alt="icon1.svg"
+                    />
+                  </div>
+                  <h5 class="card_title">تطور من نفسك</h5>
+                  <p class="card_desc">
+                    نجعل التطبيقات المعقدة سهلة للمستخدمين. سنكون سعداء بتنفيذ
+                    أفكارك في واجهة مستخدم سلسة وتجربة مستخدم ذات معنى.
+                  </p>
+                  <div>
+                    <a href="" class="anc_learn">تعرّف أكثر</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card">
+                  <div>
+                    <img
+                      src="./assets/images/landing_page/icon4.svg"
+                      alt="icon1.svg"
+                    />
+                  </div>
+                  <h5 class="card_title">محتاج مينتور يتابع معاك</h5>
+                  <p class="card_desc">
+                    تكامل وسائل التواصل الاجتماعي. كن واثقًا بأننا نعرف ونفهم
+                    أهمية وسائل التواصل الاجتماعي.
+                  </p>
+                  <div>
+                    <a href="" class="anc_learn">تعرّف أكثر</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="slider_sec">
+          <div class="container">
+            <h3 class="title">
+              ألق نظرة خاطفة على ما ستحصل عليه مع
+
+              <br />
+              Bug Solver
+            </h3>
+            <div class="slider_container">
+              <!-- Slider main container -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div>
+                        <img
+                          src="./assets/images/landing_page/slide1.svg"
+                          alt="slide1.svg"
+                        />
+                        <h6 class="card_title">
+                          مشاريع
+                          <span class="nums">4</span>
+                        </h6>
+                        <h6 class="card_subtitle">
+                          استخدم هذا النص لوصف ميزة منتجك أو خدمتك.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div>
+                        <img
+                          src="./assets/images/landing_page/slide2.svg"
+                          alt="slide1.svg"
+                        />
+                        <h6 class="card_title">التأهيل الوظيفي</h6>
+                        <h6 class="card_subtitle">
+                          استخدم هذا النص لوصف ميزة منتجك أو خدمتك.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div>
+                        <img
+                          src="./assets/images/landing_page/slide3.svg"
+                          alt="slide1.svg"
+                        />
+                        <h6 class="card_title">الأمان المتقدم</h6>
+                        <h6 class="card_subtitle">
+                          استخدم هذا النص لوصف ميزة منتجك أو خدمتك.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div>
+                        <img
+                          src="./assets/images/landing_page/slide4.svg"
+                          alt="slide1.svg"
+                        />
+                        <h6 class="card_title">الدعم الشخصي</h6>
+                        <h6 class="card_subtitle">
+                          استخدم هذا النص لوصف ميزة منتجك أو خدمتك.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div>
+                        <img
+                          src="./assets/images/landing_page/slide4.svg"
+                          alt="slide1.svg"
+                        />
+                        <h6 class="card_title">الدعم الشخصي</h6>
+                        <h6 class="card_subtitle">
+                          استخدم هذا النص لوصف ميزة منتجك أو خدمتك.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Add Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="follow_up_sec" id="follow_up_sec">
+          <div class="container">
+            <h4 class="title">نظام المتابعة</h4>
+            <p class="subtitle">قصص نجاح مذهلة من طلاب حضروا هذه الدورة</p>
+            <div class="container">
+              <div class="flex">
+                <div>
+                  <img src="./assets/images/landing_page/1.png" alt="1.png" />
+                </div>
+                <div class="card">
+                  <div>
+                    <img
+                      class="img_icon"
+                      src="./assets/images/landing_page/follow_icon1.svg"
+                      alt="follow_icon1.svg"
+                    />
+                  </div>
+                  <p class="card_title">40 محاضرة تفاعلية</p>
+                  <p class="card_desc">
+                    تصميم وتطوير موقع إبداعي. نقوم بتخصيص جميع المواقع لتناسب
+                    احتياجاتك، سواء كان ذلك موقعًا للتسوق عبر الإنترنت أو غيره.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex justify-content-end">
+                <div>
+                  <img src="./assets/images/landing_page/2.png" alt="2.png" />
+                </div>
+                <div class="card">
+                  <div>
+                    <img
+                      class="img_icon"
+                      src="./assets/images/landing_page/2follow.svg"
+                      alt="follow_icon2.svg"
+                    />
+                  </div>
+                  <p class="card_title">تقييم مستمر</p>
+                  <p class="card_desc">
+                    تصميم وتطوير موقع إبداعي. نقوم بتخصيص جميع المواقع لتناسب
+                    احتياجاتك، سواء كان ذلك موقعًا للتسوق عبر الإنترنت أو غيره.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex">
+                <div>
+                  <img src="./assets/images/landing_page/3.png" alt="3.png" />
+                </div>
+                <div class="card">
+                  <div>
+                    <img
+                      class="img_icon"
+                      src="./assets/images/landing_page/3follow.svg"
+                      alt="follow_icon2.svg"
+                    />
+                  </div>
+                  <p class="card_title">التدريب علي مشاريع حقيقية</p>
+                  <p class="card_desc">
+                    تصميم وتطوير موقع إبداعي. نقوم بتخصيص جميع المواقع لتناسب
+                    احتياجاتك، سواء كان ذلك موقعًا للتسوق عبر الإنترنت أو غيره.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex justify-content-end">
+                <div>
+                  <img src="./assets/images/landing_page/4.png" alt="4.png" />
+                </div>
+                <div class="card">
+                  <div>
+                    <img
+                      class="img_icon"
+                      src="./assets/images/landing_page/4follow.svg"
+                      alt="follow_icon2.svg"
+                    />
+                  </div>
+                  <p class="card_title">فرص عمل ف Unlimited Software</p>
+                  <p class="card_desc">
+                    تصميم وتطوير موقع إبداعي. نقوم بتخصيص جميع المواقع لتناسب
+                    احتياجاتك، سواء كان ذلك موقعًا للتسوق عبر الإنترنت أو غيره.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex">
+                <div>
+                  <img src="./assets/images/landing_page/5.png" alt="5.png" />
+                </div>
+                <div class="card">
+                  <div>
+                    <img
+                      class="img_icon"
+                      src="./assets/images/landing_page/5follow.svg"
+                      alt="follow_icon2.svg"
+                    />
+                  </div>
+                  <p class="card_title">الاحتكاك بسوق العمل</p>
+                  <p class="card_desc">
+                    تصميم وتطوير موقع إبداعي. نقوم بتخصيص جميع المواقع لتناسب
+                    احتياجاتك، سواء كان ذلك موقعًا للتسوق عبر الإنترنت أو غيره.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="success_stories" id="success_stories">
+          <div class="container">
+            <h3 class="title">قصص نجاح طلابنا</h3>
+            <p class="subtitle">قصص نجاح مذهلة من طلاب حضروا هذه الدورة</p>
+
+            <div class="row gap_26">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="flex_center">
+                    <img
+                      src="./assets/images/landing_page/user_testimonial.png"
+                      alt="user_testimonial.png"
+                    />
+                    <div>
+                      <h6 class="card_title">جون بليسكين</h6>
+                      <p class="card_subtitle">مصمم جرافيك، إنفيجن</p>
+                    </div>
+                  </div>
+                  <p class="card_desc">
+                    “نظام التصميم الخاص بك رائع حقًا وهو وراء منتجه بنسبة 100%.
+                    ,سأدافع عن ذلك أمام زملائي”.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="flex_center">
+                    <img
+                      src="./assets/images/landing_page/user_testimonial.png"
+                      alt="user_testimonial.png"
+                    />
+                    <div>
+                      <h6 class="card_title">جون بليسكين</h6>
+                      <p class="card_subtitle">مصمم جرافيك، إنفيجن</p>
+                    </div>
+                  </div>
+                  <p class="card_desc">
+                    “نظام التصميم الخاص بك رائع حقًا وهو وراء منتجه بنسبة 100%.
+                    ,سأدافع عن ذلك أمام زملائي”.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="flex_center">
+                    <img
+                      src="./assets/images/landing_page/user_testimonial.png"
+                      alt="user_testimonial.png"
+                    />
+                    <div>
+                      <h6 class="card_title">جون بليسكين</h6>
+                      <p class="card_subtitle">مصمم جرافيك، إنفيجن</p>
+                    </div>
+                  </div>
+                  <p class="card_desc">
+                    “نظام التصميم الخاص بك رائع حقًا وهو وراء منتجه بنسبة 100%.
+                    ,سأدافع عن ذلك أمام زملائي”.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="flex_center">
+                    <img
+                      src="./assets/images/landing_page/user_testimonial.png"
+                      alt="user_testimonial.png"
+                    />
+                    <div>
+                      <h6 class="card_title">جون بليسكين</h6>
+                      <p class="card_subtitle">مصمم جرافيك، إنفيجن</p>
+                    </div>
+                  </div>
+                  <p class="card_desc">
+                    “نظام التصميم الخاص بك رائع حقًا وهو وراء منتجه بنسبة 100%.
+                    ,سأدافع عن ذلك أمام زملائي”.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="flex_center">
+                    <img
+                      src="./assets/images/landing_page/user_testimonial.png"
+                      alt="user_testimonial.png"
+                    />
+                    <div>
+                      <h6 class="card_title">جون بليسكين</h6>
+                      <p class="card_subtitle">مصمم جرافيك، إنفيجن</p>
+                    </div>
+                  </div>
+                  <p class="card_desc">
+                    “نظام التصميم الخاص بك رائع حقًا وهو وراء منتجه بنسبة 100%.
+                    ,سأدافع عن ذلك أمام زملائي”.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="flex_center">
+                    <img
+                      src="./assets/images/landing_page/user_testimonial.png"
+                      alt="user_testimonial.png"
+                    />
+                    <div>
+                      <h6 class="card_title">جون بليسكين</h6>
+                      <p class="card_subtitle">مصمم جرافيك، إنفيجن</p>
+                    </div>
+                  </div>
+                  <p class="card_desc">
+                    “نظام التصميم الخاص بك رائع حقًا وهو وراء منتجه بنسبة 100%.
+                    ,سأدافع عن ذلك أمام زملائي”.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="join_us_sec">
+          <div class="container">
+            <div class="row gy-5">
+              <div class="col-md-5 center_flex">
+                <div>
+                  <h4 class="title">
+                    إنضم لينا وابدأ حياتك المهنية في وظيفة احلامك
+                  </h4>
+                  <p class="subtitle">
+                    التمكين بالمعرفة العميقة والمهارات العملية في تقنيات الواجهة
+                    الخلفية لتعزيز حياتك المهنية في تطوير البرمجيات
+                  </p>
+                  <div>
+                    <a href="" class="btn btn_join">إنضم الينا</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="images_container">
+                  <img
+                    src="./assets/images/landing_page/pic_join1.png"
+                    alt="pic_join1.png"
+                  />
+                  <img
+                    src="./assets/images/landing_page/pic_join2.png"
+                    alt="pic_join2.png"
+                  />
+                  <img
+                    class="start"
+                    src="./assets/images/landing_page/start_join.svg"
+                    alt="pic_join2.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="last_sec" id="last_sec">
+          <div class="container">
+            <h4 class="title">اشترك معانا دلوقتي مستني ايه</h4>
+            <p class="subtitle">قصص نجاح مذهلة من طلاب حضروا هذه الدورة</p>
+            <div class="row gy-5">
+              <div class="col-md-6">
+                <div class="card">
+                  <h5 class="card_title">اونلاين</h5>
+                  <p class="price">١٥٠٠ جنيه</p>
+                  <hr class="hr" />
+                  <h6 class="duration">مدتها ٦ شهور وتحتوي علي:</h6>
+                  <ul>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                  </ul>
+                  <div class="text-center">
+                    <a href="" class="btn btn_subscribe">اشترك</a>
+                  </div>
+                  <span class="badge">الأكثر حضوراً</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <h5 class="card_title">اوفلاين</h5>
+                  <p class="price">١٥٠٠ جنيه</p>
+                  <hr class="hr" />
+                  <h6 class="duration">مدتها ٦ شهور وتحتوي علي:</h6>
+                  <ul>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                    <li class="li">محتوي الكورس</li>
+                  </ul>
+                  <div class="text-center">
+                    <a href="" class="btn btn_subscribe">اشترك</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- registerationModal -->
+      <div
+        class="modal fade registerationModal"
+        id="registerationModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h5 class="title">احجز مكانك الان 🚀</h5>
+              <hr class="hr" />
+              <div class="form_container">
+                <div class="input_group">
+                  <label class="label_class" for="user_name">الاسم</label>
+                  <input
+                    class="form-control input_class"
+                    type="text"
+                    name="user_name"
+                    id="user_name"
+                  />
+                </div>
+
+                <div class="input_group">
+                  <label class="label_class" for="email"
+                    >البريد الإلكتروني</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control input_class"
+                  />
+                </div>
+                <div class="input_group">
+                  <label class="label_class" for="phone">رقم الهاتف</label>
+                  <input
+                    type="number"
+                    name="phone"
+                    id="phone"
+                    class="form-control input_class"
+                  />
+                </div>
+                <div class="input_group">
+                  <label class="label_class" for="txt_area">رسالة</label>
+                  <textarea
+                    class="form-control input_class txt_area"
+                    name="txt_area"
+                    id="txt_area"
+                    placeholder="اكتب لنا شيئاً"
+                  ></textarea>
+                </div>
+                <div class="modal-footer border-0">
+                  <button class="btn btn_send">إرسال</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4">
+            <div class="logo_container">
+              <img
+                src="./assets/images/navbar/bug_solvers_logo_ux.svg"
+                alt="Bug-solvers-footer.svg"
+              />
+            </div>
+            <p class="stay_up_to">Stay Up to date with the latest course</p>
+            <div class="social_icons_container">
+              <a href="https://www.facebook.com/BugSolvers">
+                <img src="./assets/images/footer/fb.svg" alt="fb.svg" />
+              </a>
+              <a
+                href="https://www.instagram.com/solversbug?igsh=MXhpcDUxZnVwa2xnMw=="
+              >
+                <img
+                  src="./assets/images/footer/Instragarm.svg"
+                  alt="Instragarm.svg"
+                />
+              </a>
+
+              <a href="https://www.youtube.com/@bugsolvers-2024">
+                <img
+                  src="./assets/images/footer/youtube.svg"
+                  alt="youtube.svg"
+                />
+              </a>
+              <a href="https://www.tiktok.com/@bugsolvers?lang=ar">
+                <img
+                  src="./assets/images/footer/tiktok (1).svg"
+                  alt="tiktok.svg"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3">
+            <h6 class="column_title">Quick Links</h6>
+            <div class="d-flex flex-column">
+              <a href="index.html"> Home </a>
+              <a class="contact_us_link" href="contact.html">
+                Contact Us
+                <img
+                  class="pl_12"
+                  src="./assets/images/footer/ArrowRight.svg"
+                  alt="ArrowRight.svg"
+                />
+              </a>
+              <a href="about_us.html"> About Us </a>
+              <a href="courses.html"> Courses </a>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <h6 class="column_title mb-2 d-flex">
+              <span class="pe-2">
+                <img
+                  class="pr_8"
+                  src="./assets/images/footer/Location.svg"
+                  alt="Location.svg"
+                />
+                Address:</span
+              >
+              <p class="mb_18">
+                77 Mostafa El Nhas <br />
+                El Naser City
+              </p>
+            </h6>
+            <div class="mb_18">
+              <img
+                class="pr_8"
+                src="./assets/images/footer/Calling.svg"
+                alt="Calling.svg"
+              />
+              <a href="tel:201008899366"> Tel :+201008899366 </a>
+            </div>
+
+            <div class="mb_18 d-flex align-items-center">
+              <img
+                class="pr_8"
+                src="./assets/images/footer/Message.svg"
+                alt="Message.svg"
+              />
+              <a
+                class="d-flex gap-2 flex_sm_wrap"
+                href="mailto:bug.solvers2024@gmail.com"
+              >
+                <span class="pr-5">Email:</span>
+                <span class="email_span">bug.solvers2024@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <p class="copy_wright">
+          &copy; 2024 - Bug Solvers. Designed by
+          <a
+            class="unlimited_anc"
+            href="https://unlimited-software.com/en"
+            target="_blank"
+            >Unlimited Software</a
+          >. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <div class="whatsapp_container" id="whatsapp_container">
+      <div class="text-end">
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close"
+          onclick="closeWhatsappContainer()"
+        ></button>
+        <!-- <button class="close">x</button> -->
+      </div>
+      <a href="" class="btn btn_register">سجل معانا</a>
+
+      <a
+        href="https://api.whatsapp.com/send?phone=201008899366"
+        class="btn btn_whatsapp"
+      >
+        تواصل عبر الواتساب
+        <img
+          class="whatsapp_img"
+          src="./assets/images/landing_page/whatsapp.svg"
+          alt="whatsapp.svg"
+        />
+      </a>
+    </div>
+    <!-- Global Bootstrap CDN V5.3.2  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Global jquery CDN V3.7.1  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Global jquery CDN V3.7.1  -->
+
+    <!-- Additional swiper library  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- additional general JS File -->
+    <script src="./content/js/swiper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+.navbar {
+  height: 125px;
+  padding: 0;
+  @include responsive(max, 425px) {
+    height: 100px;
+  }
+  .navbar-brand {
+    margin-#{$e}: 153px;
+    @include responsive(max, 1400px) {
+      margin-#{$e}: 100px;
+    }
+    @include responsive(max, 1200px) {
+      margin-#{$e}: 50px;
+    }
+    @include responsive(max, 1055px) {
+      margin-#{$e}: 1%;
+    }
+    img {
+      @include responsive(max, 425px) {
+        width: 90px;
+      }
+    }
+  }
+  .search_input {
+    flex-basis: 367px;
+    height: 44px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background-color: $color_white;
+    border: 1px solid #d0d5dd;
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    margin-#{$e}: 30px;
+    ::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #667085;
+    }
+  }
+  .navbar-nav {
+    .nav-link {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $color_black_1;
+      padding-#{$s}: 0;
+      padding-#{$e}: 0;
+      margin-#{$e}: 20px;
+      &.active,
+      &:hover {
+        color: $color_primary;
+      }
+    }
+  }
+  .search_form {
+    @include responsive(max, 767px) {
+      display: none !important;
+    }
+  }
+  .container {
+    @include responsive(max, 1199px) {
+      max-width: 100%;
+    }
+  }
+  .navbar-collapse {
+    @include responsive(max, 1014px) {
+      flex-basis: 80%;
+    }
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    #{$s}: -35px;
+  }
+
+  .lang_dropdown_navbar {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

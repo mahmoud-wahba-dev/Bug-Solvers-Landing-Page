@@ -1,0 +1,147 @@
+.course_container {
+  // width: 405px;
+  min-height: 522px;
+  border-radius: 20px;
+  border: 2px solid #cecece;
+
+  @include responsive(max, 1400px) {
+    width: auto;
+  }
+  @include responsive(max, 1024px) {
+    height: 543px;
+  }
+  @include responsive(max, 768px) {
+    height: 570px;
+  }
+  .course_img {
+    width: 100% !important;
+  }
+  .course_img_container {
+    margin-bottom: 24px;
+    height: 190px;
+    .course_img {
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  }
+  .course_inner_padding {
+    padding: 24px;
+  }
+  .lock_icon {
+    width: 50px;
+    height: 50px;
+  }
+  .course_category {
+    height: 25px;
+    border-radius: 4px;
+    background: #106ad41a;
+    padding: 3px 30px;
+  }
+  .course_name {
+    margin-top: 32px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $color_black;
+    margin-bottom: 19px;
+  }
+  .course_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @include responsive(max, 768px) {
+      flex-direction: column;
+    }
+    span {
+      padding-#{$s}: 4px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      @include responsive(max, 1200x) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+  .course_btns_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    @include responsive(max, 1200px) {
+      gap: 10px;
+    }
+    @include responsive(max, 991px) {
+      flex-wrap: wrap;
+    }
+    @include responsive(max, 768px) {
+      flex-direction: column;
+      gap: 17px;
+    }
+    div {
+      // flex: 1;
+      @include responsive(max, 1199px) {
+        width: 50%;
+      }
+      @include responsive(max, 991px) {
+        width: 100%;
+      }
+    }
+    .btn_view_course {
+      // width: 156.12px;
+      // flex: 1;
+      height: 48px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background-color: $color_primary;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      color: $color_white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 1rem;
+      @include responsive(max, 1024px) {
+        gap: 0;
+        width: auto;
+      }
+      @include responsive(max, 991px) {
+        gap: 10px;
+      }
+      @include responsive(max, 768px) {
+        gap: 12px;
+        width: 100%;
+      }
+    }
+    .price_now {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      display: block;
+      color: $color_primary;
+
+      @include responsive(max, 1200px) {
+        font-size: 20px;
+      }
+      @include responsive(max, 768px) {
+        font-size: 24px;
+      }
+    }
+    .price_before {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $color_black_1;
+      text-decoration: line-through;
+    }
+  }
+}
