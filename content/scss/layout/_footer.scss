@@ -136,8 +136,9 @@ footer {
     align-items: center;
     gap: 16px;
     margin-bottom: 50px;
-    // @include responsive(max, 768px) {
-    //   flex-direction: column;
-    // }
+    @include responsive(max, 768px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
   }
 }
