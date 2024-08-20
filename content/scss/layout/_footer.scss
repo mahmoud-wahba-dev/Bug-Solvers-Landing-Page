@@ -1,4 +1,9 @@
 footer {
+  // * {
+  //   font-family: "AlHurraBold";
+  // }
+
+  // direction: rtl;
   // min-height: 471px;
   background-color: $color_black_1;
   color: $color_white;
@@ -17,6 +22,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 12px;
+    justify-content: center;
+    margin-bottom: 49px;
     @include responsive(max, 768px) {
       margin-top: 3rem;
       margin-bottom: 2rem;
@@ -121,5 +128,16 @@ footer {
     @include responsive(max, 768px) {
       flex-wrap: wrap;
     }
+  }
+
+  .center_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+    // @include responsive(max, 768px) {
+    //   flex-direction: column;
+    // }
   }
 }

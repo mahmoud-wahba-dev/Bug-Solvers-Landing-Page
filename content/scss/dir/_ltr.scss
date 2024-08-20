@@ -1,5 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-$mainFont: "Poppins", sans-serif;
+// /* Font Face for Bold Font */
+@font-face {
+  font-family: "AlHurraBold";
+  src: url("/assets/fonts/Al-Hurra-Txtreg-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+
+/* Font Face for Regular Font */
+@font-face {
+  font-family: "AlHurraRegular";
+  src: url("/assets/fonts/Alhurra_regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+
+/* Font Face for Light Font */
+@font-face {
+  font-family: "AlHurraLight";
+  src: url("/assets/fonts/AlHurra-Font-Light.ttf") format("truetype");
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+}
+
+/* CSS Class for Bold Font */
+.font-bold {
+  font-family: "AlHurraBold", sans-serif;
+  font-weight: 700; /* Ensure it's bold */
+}
+
+/* CSS Class for Regular Font */
+.font-regular {
+  font-family: "AlHurraRegular", sans-serif;
+  font-weight: 400; /* Ensure it's regular */
+}
+
+/* CSS Class for Light Font */
+.font-light {
+  font-family: "AlHurraLight", sans-serif;
+  font-weight: 300; /* Ensure it's light */
+}
+
+$mainFont: "AlHurraRegular", sans-serif;
 
 $s: left;
 $e: right;
